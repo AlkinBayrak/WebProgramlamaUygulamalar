@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elemanları</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset style="width: 20%;">
+            <legend>FORM</legend>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="txtKad">Kullanıcı Adı:</label>
+                        
+                    </td>
+                    <td>
+                        <input placeholder="Kullanıcı Adı " id="txtKad" type="text"> <!--(input) type olarak default textbox olarak gelir-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="txtSifre">Şifre:</label>
+                       
+                    </td>
+                    <td>
+                        <input placeholder="Şifre" id="txtSifre" type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="txtSifreTekrari">Şifre Tekrarı:</label><br>
+                    </td>
+                    <td>
+                        <input placeholder="Şifre Tekrarı" id="txtSifreTekrari" type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="chcHatirla">Beni Hatırla</label>
+                    </td>
+                    <td>
+                        <input id="chcHatirla" type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Durum:</label><br>
+                    </td>
+                    <td colspan="2">
+                        <label>Bursulu</label>
+                        <input name="rdDurum" id="rdBurslu" type="radio">
+                        <label>Ücretli</label>
+                        <input name="rdDurum" id="rdUcretli" type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Seçim Yapınız :</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="Seçiniz" selected>Seçiniz</option>
+                            <option value="Devlet">Devlet</option>
+                            <option value="Vakif">Vakıf</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Adres:</label>
+                    </td>
+                    <td>
+                        <!--(rows) (role) boyutlarını ayarlamak için kullanılıyor-->
+                        <textarea placeholder="Adres giriniz" rows="10" role="35"> 
+
+                         </textarea>
+                    </td>
+                </tr>
+            </table>
+    </fieldset>
+    </form>
+
+</body>
+</html>
